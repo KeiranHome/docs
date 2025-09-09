@@ -2,79 +2,82 @@
 title: "Quickstart"
 description: "Start building awesome documentation in minutes"
 ---
+# 开发场景
 
-## Get started in three steps
+## 步骤一：登录
+### 1. 进入登陆界面
+打开 [腾讯云 CloudStudio - 云端开发，化繁为简](https://cloudstudio.net/ "腾讯云 CloudStudio - 云端开发，化繁为简")，页面右上角会显示 **「登录/注册」** 按钮，点击进入登录界面。  
 
-Get your documentation site running locally and make your first customization.
+> 若直接访问平台功能页（如模板中心、课程中心），未登录状态下会自动跳转至登录界面。 
 
-### Step 1: Set up your local environment
+   <!-- <div style={{ width: '200px' }}>![](images/20250901_204703.png)</div> -->
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
 
-### Step 2: Deploy your changes
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+<!-- <div style={{ width: '600px' }}>![](images/20250901_204736.png)</div> -->
+ 
+### 2. 登陆与退出 
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+#### 2.1 登陆  
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+- **操作步骤：** 点击登录界面的 **「微信」** 按钮 → 弹出微信二维码 → 用微信扫描二维码（电脑端微信已登录时支持快捷确认） → 在微信中点击 **「确认登录」** → 页面自动刷新并完成登录。
 
-### Step 3: Go live
+  <!-- <div style={{ width: '800px' }}>![](images/微信登录.gif)</div> -->
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+> 这里仅对推荐方式做说明，如有其他登陆需求可查看 [登陆方式](../../product_use/account/login/login.md) 加以说明
 
-## Next steps
+### 2.2 **退出**：  
 
-Now that you have your docs running, explore these key features:
+- **操作步骤：** 点击页面右上角的 **「用户头像」** → 在下拉菜单中选择 **「退出登录」** → 确认后即可退出当前账号，返回登录界面。  
 
-<CardGroup cols={2}>
+<!-- <div style={{ width: '400px' }}>![](images/20250901_205433.png)</div> -->
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+## 步骤二：实名认证
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+关于实名认证请查看 [实名认证](../../product_use/account/real-name-authentication/real-name-authentication.md)
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+> 为什么需要实名认证？
+> 为了使用平台的更多功能（比如不实名认证无法创建公开应用、发布课程等公开操作）
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+## 步骤三：腾讯云账号绑定
 
-</CardGroup>
+关于腾讯云账号请查看 [腾讯云账号绑定与解绑](../../product_use/account/tencent-cloud-account/tencent-cloud-account.md)
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+> 为什么需要绑定腾讯云账号？
+> 1. 为了领取免费的 50 机时
+> 2. 由于机时的使用是与腾讯云账户有关
+
+## 步骤四：了解机时
+
+## 步骤五：关于应用
+这里将说到管理应用的全方面流程说明：
+- 第一步：[应用创建](#应用创建)
+- 第二步：[工作空间基本操作](#工作空间基本操作)
+- 第三步：[应用管理](#应用管理)
+- 第四步：[应用分享](#应用分享)
+
+### 应用创建
+应用创建包含 **「从模版创建」、「从 Git 仓库导入」、「二次开发」**
+
+#### 如何选择？
+- **「从模版创建」**：基于平台预设的「成品化基础框架」快速搭建应用，模版已包含通用功能（如基础页面布局、登录模块、数据库连接逻辑等），无需从零写代码。
+- **「从 Git 仓库导入」**：将你已在 Git 仓库（如 CNB、GitHub、GitLab、Gitee）中编写好的完整代码项目，直接导入平台进行部署，本质是 “复用已有代码资产”，平台仅负责环境配置和运行。
+- **「二次开发」**：将已有在 CloudStudio 社区中创建好的公开他人应用以及个人应用进行二次开发。
+
+详细应用创建请查看 [应用创建](../../product_use/application/create-application/create-application.md)
+
+### 工作空间基本操作
+
+
+### 应用管理
+关于应用管理请查看 [应用管理](../../product_use/application/manage-applications/manage-applications.md)
+
+### 应用分享
+关于应用分享请查看 [应用分享](../../product_use/application/application-share/application-share.md)
+
+## 步骤六：允许项目
+
+## 步骤七：上传到仓库
+我们将已经创建好或者开发好的应用保存到自己的仓库中，下面我们以上传到 CNB 为例进行说明
+
+
